@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class MaximumNumber {
 
 	public static void main(String[] args) {
-		compareTo(12.5F, 32.85F, 25.25F);
+		compareTo("Apple", "vegetables", "Banana");
 	}
 
 	/*
@@ -46,5 +46,22 @@ public class MaximumNumber {
 
 		else
 			System.out.println("number3 is maximum");
+	}
+	/*
+	 * comparing 3 string , to find maximum String
+	 */
+	public static void compareTo(String str1, String str2, String str3) {
+		String word1 = new String(str1);
+		String word2 = new String(str2);
+		String word3 = new String(str3);
+
+		if (word1.compareTo(word2) > 0 && word1.compareTo(word3) > 0)
+			System.out.println("Words is maxximum");
+
+		else if (word2.compareTo(word1) > 0 && word2.compareTo(word3) > 0)
+			System.out.println("Word2 is maximum");
+
+		else
+			System.out.println("Word3 is maximum");
 	}
 }
